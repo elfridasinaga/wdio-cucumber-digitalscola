@@ -28,11 +28,10 @@ Then(/^user login using username "(.*)" and password "(.*)"$/, async (username, 
     await SauceLoginPage.login(username, password)
 });
 
-Then(/^user click cart button"$/, async (username, password) => {
-    await SauceLoginPage.login(username, password)
+Then(/^user click add cart button$/, async () => {
+    await DashboardPage.clickAddCartButton()
 });
 
-Then(/^user click cart button"$/, async (username, password) => {
-    await SauceLoginPage.login(username, password)
+Then(/^user click cart button$/, async () => {
+    await DashboardPage.clickCartButton()
 });
-

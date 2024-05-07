@@ -30,7 +30,7 @@ class SauceLoginPage {
         await this.inputUsername(username)
         await this.inputPassword(password)
         await this.clickLoginButton()
-        await browser.pause(5000)
+        
     }
 
     open() {
